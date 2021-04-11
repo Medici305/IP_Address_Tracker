@@ -1,0 +1,12 @@
+/* Imports */
+@import "./components/responsive";
+
+// Variables
+$Very_Dark_Gray: hsl(0, 0%, 17%);
+$Dark_Gray: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
