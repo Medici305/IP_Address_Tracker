@@ -1,0 +1,75 @@
+/* Imports */
+/* laptop */
+@media only screen and (max-width: 992px) {
+  .result {
+    padding: 1rem 0 !important;
+  }
+  .result .col-12 {
+    border: none !important;
+    text-align: center;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .result {
+    padding: 2rem 0 !important;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .result {
+    top: 11rem !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+}
+
+p {
+  color: #969696;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #2b2b2b;
+}
+
+/* Section 1 Top half */
+.header {
+  min-height: 40vh;
+  background-image: url(../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header .input-group span {
+  background-color: black !important;
+  padding: 0 1.5rem;
+}
+.header .result {
+  position: absolute;
+  top: 13rem;
+  z-index: 2;
+  border-color: #969696;
+  border-radius: 1rem;
+}
+
+/* Section 2 Bottom half*/
+.bottom {
+  min-height: 60vh;
+}
+
+/*# sourceMappingURL=style.css.map */

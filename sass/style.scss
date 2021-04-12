@@ -1,5 +1,5 @@
 /* Imports */
-@import "./components/responsive";
+@import "./components/responsivness";
 
 // Variables
 $Very_Dark_Gray: hsl(0, 0%, 17%);
@@ -9,4 +9,47 @@ $Dark_Gray: hsl(0, 0%, 59%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+}
+
+p {
+  color: $Dark_Gray;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $Very_Dark_Gray;
+}
+
+/* Section 1 Top half */
+.header {
+  min-height: 40vh;
+  background-image: url(../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .input-group {
+    span {
+      background-color: black !important;
+      padding: 0 1.5rem;
+    }
+  }
+  .result {
+    position: absolute;
+    top: 13rem;
+    z-index: 2;
+    border-color: $Dark_Gray;
+    border-radius: 1rem;
+  }
+}
+
+/* Section 2 Bottom half*/
+.bottom {
+  min-height: 60vh;
 }
