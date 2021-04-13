@@ -18,7 +18,6 @@ async function fetchIpAddress(searchItem) {
       `https://geo.ipify.org/api/v1?apiKey=at_lMzIrsfzY0q4zhvqPnmcqAJCF2gzy&ipAddress=${searchValue}`
     );
     const response = await dataFetch.json();
-    console.log(response);
     // Change location displayed on map based on ip address searched for.
     frame.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBrt4t_3LwPHGLSBOY71_oHIZpVeUS9kHQ
             &q=bank,${response.location.city}`;
@@ -52,5 +51,4 @@ searchButton.addEventListener("click", (e) => {
   e.preventDefault();
   clear();
   fetchIpAddress(searchValue);
-  console.log("change");
 });
