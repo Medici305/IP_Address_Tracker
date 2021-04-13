@@ -20,7 +20,7 @@ async function fetchIpAddress(searchItem) {
     const response = await dataFetch.json();
     // Change location displayed on map based on ip address searched for.
     frame.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBrt4t_3LwPHGLSBOY71_oHIZpVeUS9kHQ
-            &q=bank,${response.location.city}`;
+            &q=null,${response.location.city}`;
     // Set the results table with data returned from api.
     setResults(response);
   } catch (error) {
