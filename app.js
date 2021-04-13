@@ -9,6 +9,7 @@ const searchButton = document.querySelector(".btn");
 const frame = document.querySelector(".frame-map");
 const spinner = document.querySelector(".spin");
 const googleMap = document.getElementById("map");
+const errorMessage = document.querySelector(".error");
 let serachValue;
 
 // Functions
@@ -25,6 +26,11 @@ async function fetchIpAddress(searchItem) {
     setResults(response);
   } catch (error) {
     console.log(error.message);
+    console.log(errorMessage);
+    errorMessage.classList.replace("hide", "show");
+    frame.classList.replace("show", "hide");
+    document.querySelector(".result").classList.replace("show", "hide");
+    console.log(errorMessage);
   }
 }
 
