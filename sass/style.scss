@@ -15,6 +15,27 @@ body {
   font-family: Rubik;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $Dark_Gray;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 p {
   color: $Dark_Gray;
   font-size: 0.75rem;
@@ -38,6 +59,7 @@ h2 {
     span {
       background-color: black !important;
       padding: 0 1.5rem;
+      border: none;
     }
   }
   .result {
@@ -52,4 +74,5 @@ h2 {
 /* Section 2 Bottom half*/
 .bottom {
   min-height: 60vh;
+  overflow: hidden;
 }
